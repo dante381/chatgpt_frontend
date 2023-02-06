@@ -1,6 +1,6 @@
-.flexbox-container {
-  display: flex;
-  flex-direction: row;
+.Flex-Box {
+    display: flex;
+    flex-direction: row;
 }
 
 .App-logo {
