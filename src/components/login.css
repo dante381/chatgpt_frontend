@@ -1,8 +1,9 @@
 .Login{
-    height:50%;
-    width:50%;
+    height: 50%;
+    width: 50%;
+    margin-left: 20%;
 }
-input{
-    height: 25px;
-    width: 175px;
-}
+/* input{
+    padding: 1%;
+    margin:3%;
+} */

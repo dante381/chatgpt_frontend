@@ -1,0 +1,9 @@
+.Register{
+    height: 50%;
+    width: 50%;
+    margin-left: 20%;
+}
+input{
+    padding: 1%;
+    margin:3%;
+}
