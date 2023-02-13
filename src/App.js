@@ -10,9 +10,6 @@ function App() {
         <Login/>
         <Register/>
       </div>
-      <div>
-        <Search/>
-      </div>
     </div>
   );
 }
