@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import './login.css'
 import styles from './login.module.css'
 
 class Login extends Component{
@@ -25,7 +24,7 @@ class Login extends Component{
     }
     render(){
         return(
-            <div class="logindiv">
+            <div className={styles.logindiv}>
                 <form onSubmit={this.handleSubmit}>
                     <h1 className={styles.textcolor}> Login </h1>
                     

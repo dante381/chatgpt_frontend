@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import './signup.css';
 import styles from './signup.module.css'
 
 class Signup extends Component{
@@ -29,11 +28,11 @@ class Signup extends Component{
     }
     handleSubmit = (event)=>{
         alert(`${this.state.name} ${this.state.username} ${this.state.password}`)
-        event.preventDefault()
+        // event.preventDefault()
     }
     render(){
         return(
-            <div class="signupdiv">
+            <div className={styles.signupdiv}>
                 <form onSubmit={this.handleSubmit}>
                     <h1 className={styles.textcolor}> Signup Page </h1>
                     <label>Name</label>

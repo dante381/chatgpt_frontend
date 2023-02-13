@@ -1,3 +1,7 @@
+*{
+  background-color:cornsilk;
+}
+
 .Flex-Box {
     display: flex;
     flex-direction: row;

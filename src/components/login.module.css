@@ -1,3 +1,11 @@
 .textcolor{
     color:limegreen;
 }
+.logindiv{
+    height: 50%;
+    width: 50%;
+}
+input{
+    padding: 1%;
+    margin: 3%;
+}
