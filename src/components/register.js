@@ -36,7 +36,7 @@ function Register(){
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username !== ''|| password !== '' || email!=='' || phone!=='' || name!=='') {
-            axios.post('http://anishkprod.ddns.net:81/register',{
+            axios.post('http://localhost:4000/register',{
                 username:username,
                 password:password,
                 name:name,

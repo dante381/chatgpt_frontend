@@ -21,7 +21,7 @@ function Login(){
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username !== ''|| password !== '') {
-            axios.post('http://anishkprod.ddns.net:81/login',{
+            axios.post('http://localhost:4000/login',{
                 username:username,
                 password:password
             })
@@ -41,6 +41,20 @@ function Login(){
             })
         }
     };
+    const handleUpdate=(e)=>{
+        e.preventDefault();
+        if(username!=='' && password!==''){
+            axios.post('http://localhost:4000/update',{
+                username:username,
+                password:password
+            })
+            .then(user=>{
+                if(user){
+                    setRes1(user['data']['message']);
+                }
+            })
+        }
+    }
 
     return(
         <div className="Login">
@@ -49,6 +63,7 @@ function Login(){
                 <input type="text" id="username" onChange={handleUsername} placeholder="username" value={username}></input><br></br>
                 <input type="password" id="password" onChange={handlePassword} placeholder="password" value={password}></input><br></br>
                 <input type="submit" id="submit" value="Submit"></input>
+                <button onClick={handleUpdate}>Update</button>
             </form>
             <br></br>
             {/* <Link to="/">GO</Link> */}
@@ -56,6 +71,7 @@ function Login(){
             <div className='res'>
                 {res1}
             </div>
+            <br></br>
             <Outlet/>
         </div>
     );
