@@ -1,45 +1,69 @@
 .Search {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .Search form {
-    display: flex;
-    align-items: center;
-  }
-  
-  .Search label {
-    margin-right: 10px;
-    font-weight: bold;
-  }
-  
-  .Search input[type="text"] {
-    flex-grow: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  .Search input[type="submit"],
-  .Search button {
-    margin-left: 10px;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    background-color: #4285f4;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .Search input[type="submit"]:hover,
-  .Search button:hover {
-    background-color: #0d47a1;
-  }
-  
-  .Search div {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.Search form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Search label {
+  margin-right: 10px;
+}
+
+.Search input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.Search input[type="submit"], .Search button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Search input[type="submit"]:hover, .Search button:hover {
+  background-color: #3e8e41;
+}
+
+.Search div {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Search table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Search table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.Search table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.Search table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

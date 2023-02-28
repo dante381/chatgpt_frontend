@@ -35,8 +35,16 @@ function Search(){
                 if(user['data']){
                     // console.log(user);
                     var dic=user['data'];
-                    setRes1(Object.keys(dic).map(key => <div>
-                        {key}: {dic[key]}<br></br></div>
+                    setRes1(Object.keys(dic).map(key => 
+                            <div>
+                                <table className='table'>
+                                    <tr>
+                                        <td>{key}</td>
+                                        <td>{dic[key]}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        
                     ));
                     // console.log(dic);
                     // setRes1(dic);
